@@ -69,4 +69,20 @@ print()
 #list comprehensions
 listpowers =  [value * value for value in range(1,11)]
 print(listpowers)
+print()
+
+# List with using if statements pizza menu
+toppings = ["cheese", "mushroom","pineapples", "hamburger"]
+print(f"Here is a list of our pizza toppings: {toppings}")
+request_topping = input("what topping would you like on your pizza? ").lower()
+
+for topping in toppings:
+  if topping == request_topping:
+    print(f"Your {topping} pizza will be ready in 15 min. ")
+  
+if request_topping not in toppings:
+  print(f"sorry we do not carry {request_topping} as a topping")
+    
+
+
 
